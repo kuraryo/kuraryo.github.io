@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>"ions" is the fast building website components framework.</title>
+
+    <style>
+      #lottie {
+        height: 100vh;
+      }
+    </style>
+    <!-- <script scr="./lottie.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"></script>
+  </head>
+  <body>
+    <div id="lottie"></div>
+    <!-- <script src="./main.js"></script> -->
+    <script>
+      lottie.loadAnimation({
+          container: document.getElementById('lottie'),
+          renderer: 'svg', // 描画形式
+          loop: true, // trueにしたらループ。1回再生の場合はfalse
+          autoplay: true, // 自動再生
+          path: 'data.json' // jsonのパスを指定
+        });
+    </script>
+  </body>
+</html>
